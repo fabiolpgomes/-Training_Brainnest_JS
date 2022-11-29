@@ -207,11 +207,16 @@ This is done by including the name of the function in the code somewhere, follow
 
 ### 33. What are anonymous functions?
 
+An anonymous function is a function without a function name. Only function expressions can be anonymous, function declarations must have a name:
+```  (function () {}); ```
 
+### 34. What is function scope?
 
+JavaScript has function scope: Each function creates a new scope. Variables defined inside a function are not accessible (visible) from outside the function. Variables declared with var , let and const are quite similar when declared inside a function. They all have Function Scope: 
+function myFunction() {
+  var carName = "Volvo";   // Function Scope
+}
 
-### 34. What are the    
+### 35. What are return values?
 
-
-
-### 35. What are the
+A return is a value that a function returns to the calling script or function when it completes its task. A return value can be any one of the four variable types: handle, integer, object, or string. The type of value your function returns depends largely on the task it performs.
