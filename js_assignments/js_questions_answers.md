@@ -220,3 +220,21 @@ function myFunction() {
 ### 35. What are return values?
 
 The values that a function returns when it has completed. A return value can be any one of the four variable types: handle, integer, object, or string. 
+
+### 36. What are arrow functions?
+
+Arrow functions are a short syntax, introduced by ECMAscript 6, that can be used similarly to the way you would use function expressions.
+hello = (name) => { return ("Hello " + name); }
+(name), //calling arrow function
+
+another example,
+
+const materials = [
+  'Hydrogen',
+  'Helium',
+  'Lithium',
+  'Beryllium'
+];
+
+console.log(materials.map(material => material.length));
+// expected output: Array [8, 6, 7, 9]
