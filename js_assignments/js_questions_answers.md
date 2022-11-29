@@ -219,4 +219,4 @@ function myFunction() {
 
 ### 35. What are return values?
 
-A return is a value that a function returns to the calling script or function when it completes its task. A return value can be any one of the four variable types: handle, integer, object, or string. The type of value your function returns depends largely on the task it performs.
+The values that a function returns when it has completed. A return value can be any one of the four variable types: handle, integer, object, or string. 
