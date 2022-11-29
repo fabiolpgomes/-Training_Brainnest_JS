@@ -202,8 +202,8 @@ function functionName(parameter1, parameter2, ...) {
 In JavaScript, a function allows you to define a block of code, give it a name and then execute it as many times as you want. A JavaScript function can be defined using function keyword.
 
 ### 32. How do you invoke a function?
-T
-his is done by including the name of the function in the code somewhere, followed by parentheses: ```  <function-name>(); ```
+
+This is done by including the name of the function in the code somewhere, followed by parentheses: ```  <function-name>(); ```
 
 ### 33. What are anonymous functions?
 
