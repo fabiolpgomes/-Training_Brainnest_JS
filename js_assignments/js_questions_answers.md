@@ -1,4 +1,4 @@
-## CSS - Terminology & Defitions - Questions and Answers.
+## Javascript 1 - Terminology & Defitions - Questions and Answers.
 
 ### 1. Name the three ways to declare a variable?
 
@@ -28,87 +28,190 @@ The difference between == and === is that: == operator does the type conversion 
 
 ### 7. When would you receive a NaN result?
 
-The CSS box model represents the design and layout of the site. It consists of margins, borders, paddings, and the actual content. The properties work in the same order: top, right, bottom, and left. The term "box model" is used when talking about design and layout.
+NaN represents a computational error. It is a result of an incorrect or an undefined mathematical operation, for instance: usually occurs in the cases when an expression results in a number that is undefined or can't be represented. 
 
-### 8. What does the box-sizing CSS property do?
 
-The box-sizing property allows us to include the padding and border in an element's total width and height. If you set box-sizing: border-box; on an element, padding and border are included in the width and height.
+### 8. How do you increment and decrement a number?
 
-### 9. What is the difference between the standard and alternative box model?
+the increment operator ++ increases the value of a variable by 1. 
+Similarly, the decrement operator -- decreases the value of a variable by 1. 
 
-If you are using the standard box model, the size of the border is added to the width and height of the box. If you are using the alternative box model then the size of the border makes the content box smaller as it takes up some of that available width and height.
+### 9. Explain the difference between prefixing and post-fixing increment/decrement operators.
 
-### 10. Would you use margin or padding to create more space between 2 elements?
+The prefix increment returns the value of a variable after it has been incremented. On the other hand, the more commonly used postfix increment returns the value of a variable before it has been incremented.
 
-Use margins when you're adjusting the spacing of an element in relation to another element.
+### 10. What is operator precedence and how is it handled in JS?
 
-### 11. Would you use margin or padding to create more space between the contents of an element and its border?
+Operator precedence determines how operators are parsed concerning each other. Operators with higher precedence become the operands of operators with lower precedence.
 
-Padding is the space inside of an element
+### 11. How do you log information to the console?
 
-### 12. Would you use margin or padding if you wanted two elements to overlap each other?
+Shortcut to acess console painel```Control + Shift + J```` 
+The console.log() is a function in JavaScript that is used to print any kind of variables defined before in it or to just print any message that needs to be displayed to the user.
+https://bramus.github.io/chrome-dtt-11-demo/
 
-use margin to create space between items on a webpage, such as between a photo and the words describing it. They also use margin to change the amount of space between items, prevent elements from touching, overlap elements and center an element horizontally in its space.
+### 12. What does unary plus operator do to string representations of integers?
 
-### 13. What is the difference between a block element and an inline element?
+The Unary plus is the fastest and preferred way of converting something into a number, because it does not perform any other operations on the number
 
-A block-level element always starts on a new line, and the browsers automatically add some space (a margin) before and after the element.
-An inline element does not start on a new line, only takes up as much width as necessary.
+### 13. What are the eight data types in JavaScript?
 
-### 14. What is the difference between an inline element and an inline-block element?
+JavaScript has 8 types: undefined, null, boolean, number, bigint, string, symbol, and object.
 
-Inline , the major difference is that display: inline-block allows to set a width and height on the element. Also, with display: inline-block , the top and bottom margins/paddings are respected, but with display: inline they are not.
+let name = "Fabio";                           // string
+let age = 44;                                  // number 
+let fullName = {first:"Fabio", last:"Gomes"};  // object
+let truth = false;                             // boolean
+let language = ["HTML","CSS","JS"];            // array
+let x; typeof x;                               // undefined
+let val = null;                                // value null
 
-### 15. Is an h1 block or inline?
+### 14. Which data type is NOT primitive?
 
+Non-primitive data types is the object.
+
+### 15. What is the relationship between null and undefined?
+
+Null: It is the intentional absence of the value. It is one of the primitive values of JavaScript. 
+Undefined: It means the value does not exist in the compiler.
+
+### 16. What is the difference between single, double, and backtick quotes for strings?
+
+In JavaScript, single quotes (‘’) and double quotes (“”) are used to create string literals.
+Backticks are mostly used for string concatenation.
+
+
+### 17. What is the term for embedding variables/expressions in a string?
+
+JavaScript string interpolation is the process of embedding an expression into part of a string. A template literal is used to embed expressions. You can add values such as variables and mathematical calculations into a string using interpolation.
+
+### 18. Which type of quote lets you embed variables/expressions in a string?
+
+Backtiks. Example: ``const student_brainnest_address = `The Studant's address is ${address}.`;```
+
+### 19. How do you embed variables/expressions in a string?
+
+Using the + operator 
+
+### 20. How do you escape characters in a string?
+
+use the backslash ( \ ) escape character to prevent JavaScript from interpreting a quote as the end of the string. 
+
+### 21. What is the difference between the slice/substring/substr string methods?
+
+slice() extracts parts of a string and returns the extracted parts in a new string. 
+substring() extracts parts of a string and returns the extracted parts in a new string.
+substr() extracts parts of a string, beginning at the character at the specified position, and returns the specified number of characters. 
+
+### 22. What are the three logical operators and what do they stand for?
+
+There are three logical operators: AND , OR , and NOT.
+
+### 23. What are the comparison operators?
+
+Javascript Comparison Operators
 ```
-<p> <div> <h1> < h2> <address> etc are block level elements
-<b>, <strong>, <i>, <span>, <u> and <s> are inline level elements.
+== Equal to
+=== Equal value and equal type
+!= Not equal
+!== Not equal value or not equal type
+> Greater than
+< Less than
+>= Greater than or equal to
+<= Less than or equal to
+? Ternary operator
+```
+Greater/less than: a > b, a < b.
+Greater/less than or equals: a >= b, a <= b.
+Equals: a == b, please note the double equality sign == means the equality test, while a single one a = b means an assignment.
+Not equals: In math the notation is ≠, but in JavaScript it’s written as a != b.
+
+
+### 24. What are truthy and falsy values?
+
+In JavaScript, a truthy value is a value that is considered true when encountered in a Boolean context. All values are truthy unless they are defined as falsy. That is, all values are truthy except false , 0 , -0 , 0n , "" , null , undefined , and NaN . JavaScript uses type coercion in Boolean contexts.
+
+### 25. What are the falsy values in JavaScript?
+
+A falsy value is something which evaluates to FALSE, for instance when checking a variable. There are only six falsey values in JavaScript: undefined , null , NaN , 0 , "" (empty string), and false.
+
+### 26. What are conditionals?
+
+Conditional statements control behavior in JavaScript and determine whether or not pieces of code can run. There are multiple different types of conditionals in JavaScript including: “If” statements: where if a condition is true it is used to specify execution for a block of code.
+
+There are multiple different types of conditionals in JavaScript including:
+
+“If” statements: where if a condition is true it is used to specify execution for a block of code.
+“Else” statements: where if the same condition is false it specifies the execution for a block of code.
+“Else if” statements: this specifies a new test if the first condition is false.
+
+### 27. What is the syntax for an if/else conditional?
+
+if (condition1) { //These statements would execute if the condition1 is true } else if(condition2) { //These statements would execute if the condition2 is true } else if (condition3) { //These statements would execute if the condition3 is true } . . else { //These statements would execute if all the conditions return 
+
+Syntax: 
+if(condition expression)
+{
+    //Execute this code block
+}
+else if(condition expression){ 
+    //Execute this code block
+}
+
+
+### 28. What is the syntax for a switch statement?
+
+switch(expression) {
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default:
+    // code block
+}
+
+### 29. What is the syntax for a ternary operator?
+
+? called ternary operator is shorcut for, "if statement".
+condition ? doThisIfTrue : doThisIfFalse 
+
+// below we make object with key id, and assign it a value from body.id.
+// if body.id is null it will return false and we assign it res.id.
+
+{ id: body.id? body.id : res.id } // we can write it in if statement like this
+if(body.id){
+ return {id:body.id}
+}else{
+  return {id:res.id}
+}
+
+### 30. What is nesting?
+
+Nesting is when you write something inside of something else. You can have a function inside of another function: function x () { function y() { // something; } } You can have an if condition inside of another if condition: if (daylight) { if (before 12) { //It's morning; } else { // it's afternoon; } }
+```
+Function Syntax:
+function functionName(parameter1, parameter2, ...) {
+	return something;
+}
 ```
 
-### 16. Is button block or inline?
+### 31. What are functions useful for?   
 
-Most browsers display button elements as inline-block by default.
+In JavaScript, a function allows you to define a block of code, give it a name and then execute it as many times as you want. A JavaScript function can be defined using function keyword.
 
-### 17. Is div block or inline?
+### 32. How do you invoke a function?
+T
+his is done by including the name of the function in the code somewhere, followed by parentheses: ```  <function-name>(); ```
 
-```
-The <div> element is a block-level element.
-```
+### 33. What are anonymous functions?
 
-### 18. Is span block or inline?
 
-span is an inline element.
 
-### 19. What’s the difference between a flex container and a flex item?
 
-Flex Container is the parent element while Flex Item represents the children
+### 34. What are the    
 
-### 20. How do you create a flex item?
 
-To create a flex container, we set the value of the area's container's display property to flex or inline-flex .
 
-### 21. What are the 3 values defined in the shorthand flex property?
-
-flex-grow is 0, flex-shrink is 1 and flex-basis is 0%.
-
-### 22. How do you make flex items arrange themselves vertically instead of horizontally?
-
-By default items start from the left if flex-direction is row , and from the top if flex-direction is column . You can change this behavior using justify-content to change the horizontal alignment, and align-items to change the vertical alignment.
-
-### 23. What is the difference between justify-content and align-items?
-
-First, align-items is for items in a single row. So for a single row of elements on main axis, align-items will align these items respective of each other and it will start with fresh perspective from the next row.
-Now, align-content doesn't interfere with items in a row but with rows itself. Hence, align-content will try to align rows with respect to each other and flex container.
-
-### 24. How do you use flexbox to completely center a div inside a flex container?
-
-display: flex;
-align-items: center;
-justify-content: center;
-
-### 25. What’s the difference between justify-content: space-between and justify-content: space-around?
-
-justify-content: space-between => Distribute items evenly The first item is flush with the start, the last is flush with the end;
-
-justify-content: space-around => Distribute items evenly Items have a half-size space on either end.
+### 35. What are the
