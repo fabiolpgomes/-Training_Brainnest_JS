@@ -45,7 +45,7 @@ Operator precedence determines how operators are parsed concerning each other. O
 
 ### 11. How do you log information to the console?
 
-Shortcut to acess console painel```Control + Shift + J````
+Chrome devtools, use Shortcut to acess console painel```Control + Shift + J```
 The console.log() is a function in JavaScript that is used to print any kind of variables defined before in it or to just print any message that needs to be displayed to the user. "https://bramus.github.io/chrome-dtt-11-demo/"
 
 ### 12. What does unary plus operator do to string representations of integers?

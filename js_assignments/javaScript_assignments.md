@@ -3,7 +3,7 @@
 
 ### 1. Read more about JS and try to answer as many questions as you can from the JS1 - Terminology & Definitions file, which you can find attached in the email.
 
-"https://github.com/fabiolpgomes/Training_Brainnest_JS/blob/main/js_assignments/js_questions_answers.md"
+https://github.com/fabiolpgomes/Training_Brainnest_JS/blob/main/js_assignments/js_questions_answers.md
 
 
 ### 2. Assignment (Mathematical Shapes):
