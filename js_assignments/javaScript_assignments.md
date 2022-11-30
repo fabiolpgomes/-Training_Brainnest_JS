@@ -13,15 +13,28 @@
 Chrome Devtools, shortcut Ctrl+Shift+J than open console
 let side = 9
 let diagonal = side * Math.sqrt(2)
-console.log(diagonal) // expected output: 12.727922061357857
+console.log(diagonal.Math.randow) // expected output: 12.727922061357857
 ```
 
 #### b. Write a JavaScript program to find the area of a triangle where lengths of the three of its sides are 5, 6 and 7.
 
 ```
-
+let a = 5
+let b = 6
+let c = 7
+let p=(a+b+c)/2 // expected output: 9
+area=Math.sqrt(p *(p-a)*(p-b)*(p-c)) // expected output: 14.696938456699069
 ```
-
 
 #### c. Write a JavaScript program to find the circumference and surface area of a circle whose radius is 4.
 *When trying to find these values, you will need to use PI. Remember constants?
+
+```
+const pi = 3.14             // π = pi = 3,141592653
+let radius = 4
+let circum = 2 *pi *radius //circum= circumference
+console.log(circum)       // expected output: 25.12
+
+let area = pi *radius**2 
+console.log(area)        // expected output: 50.24
+```
