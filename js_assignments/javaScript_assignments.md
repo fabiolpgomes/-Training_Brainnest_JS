@@ -59,3 +59,16 @@ integer(5,10);
 
 
 b) Write a JavaScript program that checks whether an integer is an even or an odd number.
+
+```
+function isEvenOrOdd(n) {
+            if (n % 2 == 0) {
+                console.log(`The number is even = `+ n);
+            } else {
+                console.log(`The number is odd = `+ n);
+            }
+        };
+
+        isEvenOrOdd(3)
+        isEvenOrOdd(10)
+```
