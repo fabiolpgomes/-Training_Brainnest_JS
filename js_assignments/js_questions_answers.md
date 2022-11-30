@@ -10,7 +10,7 @@ var declarations are tricky, so they shouldn't be used. Dead code like unused va
 
 ### 3. What rules should you follow when naming variables?
 
-a) The name must contain only letters, digits, or the symbols $ and \_
+a) The name must contain only letters, digits, or the symbols $ and \
 b) The first character must not be a digit.
 Naming variables contains multiple words, camelCase is commonly used. That is: words go one after another, each word except first starting with a capital letter: myVeryLongName.
 

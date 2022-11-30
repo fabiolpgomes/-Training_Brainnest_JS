@@ -1,43 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Rock, Paper or Scissors</title>
+    <!-- included javascript here... -->
+</head>
 
 <body>
-    <h2>JavaScript Arithmetic</h2>
 
-    <script>
+    <header>
+        <h1>Rock, Paper or Scissors - Game</h1>
+        <h2>Computer Choise: <span id="computer-choice"></span></h2>
+        <h2>Your Choise: <span id="user-choice"></span></h2>
+        <h2>Result: <span id="result"></span></h2>
         
-        //3. Assignment (Conditional Statements & Loops): two integers and displays the larger of the two
-
-
-        function integer(a, b) {
-            if (a > 0 && b > 0 && a > b) {
-                console.log("The larger number is " + a);
-            } else if (a > 0 && b > 0 && a < b) {
-                console.log("The larger number is " + b);
-            } else if (a === b && a > 0 && b > 0) {
-                console.log("Both larger are equal!");
-            } else {
-                console.log("Please add an integer!");
-            }
-        }
-        integer(8, 12);
-
-
-        //checks whether an integer is an even or an odd number.
-        function isEvenOrOdd(n) {
-            if (n % 2 == 0) {
-                console.log(`The number is even = `+ n);
-            } else {
-                console.log(`The number is odd = `+ n);
-            }
-        };
-
-        isEvenOrOdd(3)
-        isEvenOrOdd(10)
-
-
-    </script>
-
+        <button id="rock">Rock</button>
+        <button id="paper">Paper</button>
+        <button id="scissors">Scissors</button>
+        
+        
+    </header>
+    
+    <script src="./app.js"></script>
 </body>
 
 </html>

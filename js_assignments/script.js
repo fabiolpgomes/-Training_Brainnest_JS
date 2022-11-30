@@ -1,10 +1,27 @@
-today=new Date();
-var cmas=new Date(today.getFullYear(), 11, 29);
-if (today.getMonth()==11 && today.getDate()>29) 
-{
-cmas.setFullYear(cmas.getFullYear()+1); 
-}  
-var one_day=1000*60*60*24;
-console.log(Math.ceil((cmas.getTime()-today.getTime())/(one_day))+
-" days left until Christmas!");
+function integer(a, b) {
+    if (a > 0 && b > 0 && a > b) {
+        console.log("The larger number is " + a);
+    } else if (a > 0 && b > 0 && a < b) {
+        console.log("The larger number is " + b);
+    } else if (a === b && a > 0 && b > 0) {
+        console.log("Both larger are equal!");
+    } else {
+        console.log("Please add an integer!");
+    }
+}
+integer(8, 12);
+
+
+//checks whether an integer is an even or an odd number.
+function isEvenOrOdd(n) {
+    if (n % 2 == 0) {
+        console.log(`The number is even = `+ n);
+    } else {
+        console.log(`The number is odd = `+ n);
+    }
+};
+
+isEvenOrOdd(3)
+isEvenOrOdd(10)
+
 
