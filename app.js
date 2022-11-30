@@ -5,18 +5,19 @@ let computerPoints = 0;
 let playerPoints = 0;
 
 function computerPlay() {
-  let selection = Math.floor(Math.random() * 3);
-  console.log(selection);
+  let randomComputer = Math.floor(Math.random() * 3);
+  console.log(randomComputer);
 
-  if (selection == 0) {
+  if (randomComputer == 0) {
     computerSelection = "rock";
-  } else if (selection == 1) {
+  } else if (randomComputer == 1) {
     computerSelection = "paper";
   } else {
     computerSelection = "scissors";
   }
   return computerSelection;
 }
+console.log(computerSelection);
 
 function selectOption() {
   choiceAdd = window.prompt(`Choice Rock, Paper or Scissors`);
@@ -56,7 +57,7 @@ function playRound(computerSelection, playerSelection) {
     playerPoints++;
     console.log("Player is the winner, try your luck again");
     alert(
-      `Player is the winner, try your luck again. The score is: Computer = ${computerPoints} and Player = ${playerPoints} `
+      `Player wins!!!! The Computer can't cry. The result was: Player = ${playerPoints} and Computer = ${computerPoints} `
     );
   } else if (
     (computerSelection == "rock" && playerSelection == "scissors") ||
@@ -65,7 +66,7 @@ function playRound(computerSelection, playerSelection) {
   ) {
     computerPoints++;
     alert(
-      `Computer is the winner. Try again. The score is: Computer = ${computerPoints} and Player = ${playerPoints} `
+      `The computer won!!!! Don't get discouraged, keep trying. The result was: Computer = ${computerPoints} and Player = ${playerPoints} `
     );
   }
 }
