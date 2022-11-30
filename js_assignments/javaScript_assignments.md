@@ -38,3 +38,24 @@ console.log(circum)       // expected output: 25.12
 let area = pi *radius**2 
 console.log(area)        // expected output: 50.24
 ```
+
+#### 3. Assignment (Conditional Statements & Loops):
+a) Write a JavaScript program that accepts two integers and displays the larger of the two.
+```
+function integer(a,b) { 
+    if (a > 0 && b > 0 && a > b) 
+    { document. write("The larger number is " + a ); 
+    } else if (a > 0 && b > 0 && a < b) 
+    { document. write("The larger number is " + b); 
+    } else if (a === b && a > 0 && b > 0) 
+    { document. write("Both numbers are equal!") 
+    } else { document.write("Please add an integer!");
+  }
+}
+
+integer(5,10);
+```
+
+
+
+b) Write a JavaScript program that checks whether an integer is an even or an odd number.
