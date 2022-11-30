@@ -1,4 +1,6 @@
 let computerSelection;
+let choiceAdd;
+let playerSelection;
 let computerPoints = 0;
 let playerPoints = 0;
 
@@ -16,20 +18,16 @@ function computerPlay() {
   return computerSelection;
 }
 
-let promptImput;
-let playerSelection;
-
 function selectOption() {
-  promptImput = window.prompt(`Choice Rock, Paper or Scissors`);
-
-  let lowerPropmtImput = promptImput.toLowerCase();
+  choiceAdd = window.prompt(`Choice Rock, Paper or Scissors`);
+  let userChoice = choiceAdd.toLowerCase();
 
   if (
-    lowerPropmtImput == "rock" ||
-    lowerPropmtImput == "paper" ||
-    lowerPropmtImput == "scissors"
+    userChoice == "rock" ||
+    userChoice == "paper" ||
+    userChoice == "scissors"
   ) {
-    playerSelection = lowerPropmtImput;
+    playerSelection = userChoice;
   } else {
     alert("Please Choice rock, paper or scissors");
   }
