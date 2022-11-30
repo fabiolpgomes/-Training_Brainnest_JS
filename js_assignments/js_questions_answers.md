@@ -16,8 +16,11 @@ let diagonal = side * Math.sqrt(2)
 console.log(diagonal) // expected output: 12.727922061357857
 ```
 
-
 #### b. Write a JavaScript program to find the area of a triangle where lengths of the three of its sides are 5, 6 and 7.
+
+```
+
+```
 
 
 #### c. Write a JavaScript program to find the circumference and surface area of a circle whose radius is 4.
