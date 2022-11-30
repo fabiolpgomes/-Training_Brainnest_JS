@@ -1,8 +1,11 @@
 let computerSelection;
+let computerPoints = 0;
+let playerPoints = 0;
 
 function computerPlay() {
   let selection = Math.floor(Math.random() * 3);
   console.log(selection);
+
   if (selection == 0) {
     computerSelection = "rock";
   } else if (selection == 1) {
@@ -15,8 +18,9 @@ function computerPlay() {
 
 let promptImput;
 let playerSelection;
+
 function selectOption() {
-  promptImput = window.prompt(`Pick rock or paper or scissors`);
+  promptImput = window.prompt(`Choice Rock, Paper or Scissors`);
 
   let lowerPropmtImput = promptImput.toLowerCase();
 
@@ -27,43 +31,44 @@ function selectOption() {
   ) {
     playerSelection = lowerPropmtImput;
   } else {
-    alert("Please make a valid selection");
+    alert("Please Choice rock, paper or scissors");
   }
   return playerSelection;
 }
 
-let computerWins = 0;
-let playerWins = 0;
-
 function playRound(computerSelection, playerSelection) {
   playerSelection = selectOption();
-  console.log(`Player has select ${playerSelection}`);
+  console.log(`Player chose ${playerSelection}`);
+
   computerSelection = computerPlay();
-  console.log(`Computer has select ${computerSelection}`);
+  console.log(`Computer chose ${computerSelection}`);
+
   if (
     (computerSelection == "rock" && playerSelection == "rock") ||
     (computerSelection == "paper" && playerSelection == "paper") ||
     (computerSelection == "scissors" && playerSelection == "scissors")
   ) {
-    console.log("No winner. Try again");
-    alert("No winner. Try again");
+    console.log("No winner, try your luck again");
+    alert("No winner, try your luck again");
   } else if (
     (computerSelection == "rock" && playerSelection == "paper") ||
     (computerSelection == "paper" && playerSelection == "scissors") ||
     (computerSelection == "scissors" && playerSelection == "rock")
   ) {
-    playerWins++;
-    console.log("Player is the winner. Try again");
-    alert(`Player is the winner. Try again. 
-        The score is: Computer = ${computerWins} and Player = ${playerWins} `);
+    playerPoints++;
+    console.log("Player is the winner, try your luck again");
+    alert(
+      `Player is the winner, try your luck again. The score is: Computer = ${computerPoints} and Player = ${playerPoints} `
+    );
   } else if (
     (computerSelection == "rock" && playerSelection == "scissors") ||
     (computerSelection == "paper" && playerSelection == "rock") ||
     (computerSelection == "scissors" && playerSelection == "paper")
   ) {
-    computerWins++;
-    alert(`Computer is the winner. Try again. 
-        The score is: Computer = ${computerWins} and Player = ${playerWins} `);
+    computerPoints++;
+    alert(
+      `Computer is the winner. Try again. The score is: Computer = ${computerPoints} and Player = ${playerPoints} `
+    );
   }
 }
 
@@ -71,8 +76,9 @@ function game() {
   for (let i = 0; i < 5; i++) {
     playRound(computerSelection, playerSelection);
   }
+
   alert(`The final score is: 
-    Computer = ${computerWins} and Player = ${playerWins}`);
+    Computer = ${computerPoints} and Player = ${playerPoints}`);
 }
 
 game();
