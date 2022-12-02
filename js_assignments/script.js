@@ -1,3 +1,7 @@
+// 3. Assignment (Conditional Statements & Loops):
+
+// a) Write a JavaScript program that accepts two integers and displays the larger of the two.
+
 function integer(a, b) {
     if (a > 0 && b > 0 && a > b) {
         console.log("The larger number is " + a);
@@ -11,13 +15,13 @@ function integer(a, b) {
 }
 integer(8, 12);
 
+// b) Write a JavaScript program that checks whether an integer is an even or an odd number.
 
-//checks whether an integer is an even or an odd number.
 function isEvenOrOdd(n) {
     if (n % 2 == 0) {
-        console.log(`The number is even = `+ n);
+        console.log("The number is even = " + n);
     } else {
-        console.log(`The number is odd = `+ n);
+        console.log("The number is odd = " + n);
     }
 };
 
