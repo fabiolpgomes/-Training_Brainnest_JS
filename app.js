@@ -1,15 +1,11 @@
-let computerSelection;
 let choiceAdd;
-let playerSelection;
-let computerPoints = 0;
-let playerPoints = 0;
 
 // Computer Selection
 function computerPlay() {
   let randomComputer = Math.floor(Math.random() * 3);
   console.log(randomComputer);
 
-  switch (choice) {
+  switch (choiceAdd) {
     case 1:
       return "rock";
       break;
