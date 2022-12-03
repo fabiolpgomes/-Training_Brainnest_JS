@@ -1,4 +1,3 @@
-let choiceAdd;
 let scorePlayer = 0;
 let scoreComputer = 0;
 
@@ -7,7 +6,7 @@ function computerPlay() {
   let randomComputer = Math.floor(Math.random() * 3);
   console.log(randomComputer);
 
-  switch (choiceAdd) {
+  switch (randomComputer) {
     case 1:
       return "rock";
       break;
