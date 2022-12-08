@@ -21,7 +21,7 @@ is returning the expected output before moving to the next step!
   
   c) Write a function that plays a single round of Rock Paper Scissors. The function should take two parameters - the playerSelection and computerSelection - and then      return a string that declares the winner of the round like so: "You Lose! Paper beats Rock"
   
-    i. Make your function’s playerSelection parameter case-insensitive (so users can input rock, ROCK, RocK or any other variation). (Here’s a tip on how to do that)
+  i. Make your function’s playerSelection parameter case-insensitive (so users can input rock, ROCK, RocK or any other variation). (Here’s a tip on how to do that)
     
   d) Important note: you want to return the results of this function call, not console.log() them. You’re going to use what you return later on, so let’s test this         function by using At this point you should be using console.log() to display the results of each round and the winner at the end.
   
